@@ -1,4 +1,5 @@
 # My Next.js Starter Template
 
--   With ESLint, Prettier and VS Code settings configured.
+-   ESLint, Prettier and VS Code settings.
 -   Typesafe env variables.
+-   Log in with Google

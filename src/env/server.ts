@@ -1,14 +1,17 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { config } from "dotenv";
 import { expand } from "dotenv-expand";
-import { ZodError } from "zod";
+import { ZodError, z } from "zod";
 
 expand(config());
 
 export const env = createEnv({
     server: {
         // Define server env variables here
-        // DATABASE_URL: z.string().url()
+        GOOGLE_CLIENT_ID: z.string(),
+        GOOGLE_CLIENT_SECRET: z.string(),
+        NEXTAUTH_SECRET: z.string(),
+        DATABASE_URL: z.string(),
     },
     // eslint-disable-next-line n/no-process-env
     experimental__runtimeEnv: process.env,
