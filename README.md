@@ -3,3 +3,4 @@
 -   ESLint, Prettier and VS Code settings.
 -   Typesafe env variables.
 -   Log in with Google
+-   Prisma ORM
